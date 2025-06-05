@@ -45,7 +45,7 @@ if __name__ == "__main__":
     x = sp.symbols('x')  #definindo x como uma icognita/simbolo matematico
 
     #funcao simbolica, nesse caso é x^2 (aqui, pode colocar qualquer funcao a qual deseja aplicar o metodo)
-    f_expr = cos(x)
+    f_expr = x ** 2
     # cria a funcao numerica para avaliacao com numpy
     f_num = sp.lambdify(x, f_expr, modules=['numpy'])
 
